@@ -1,0 +1,40 @@
+/* *{
+    border: 1px solid blueviolet;
+} */
+
+html{
+    background-color: #093659;
+    background-image: radial-gradient(#145d87,#093659,#000924);
+}
+body
+{
+    margin:0;
+}
+.sketchtitle{
+    font-size: 32px;
+    background-color: #228399;
+    margin-bottom: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.sketcharea
+{
+    display: flex;
+    justify-content: center;
+    gap:32px;
+}
+
+.sketchgrid
+{
+    border: 2px solid #041b38;
+    display: flex;
+    height: 480px;
+    width: 480px;
+}
+
+.sketchbutton {
+    background-color: #228399;
+    border: 1px solid #145d87;
+    box-sizing: border-box;
+  }
