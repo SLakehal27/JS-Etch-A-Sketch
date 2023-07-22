@@ -2,27 +2,64 @@
     border: 1px solid blueviolet;
 } */
 
-html{
-    background-color: #093659;
-    background-image: radial-gradient(#145d87,#093659,#000924);
-}
 body
 {
+    background-color: #093659;
+    background-image: radial-gradient(#145d87,#093659,#000924);
+    height: 100%;
     margin:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.sketchtitle{
-    font-size: 32px;
+
+.sketchtitle
+{
+    font-size: 24px;
     background-color: #228399;
     margin-bottom: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    color:#abffd1;
+    box-shadow: 10px 10px 3px #041b38;
 }
+
 .sketcharea
 {
     display: flex;
     justify-content: center;
     gap:32px;
+}
+
+.sketchmenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:8px;
+    background-color: #228399;
+    border-radius: 25px;
+    height: 320px;
+    padding-left: 32px;
+    padding-right: 25px;
+}
+
+.sketchmenu .sketchbtn{
+    width: 160px;
+    height: 40px;
+    background-color: #31b0b0;
+    border: none;
+    border-radius: 25px;
+    color: #abffd1;
+    transition: 0.75s ease;
+
+}
+
+.sketchbtn:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background-color: #093659;
 }
 
 .sketchgrid
@@ -36,5 +73,26 @@ body
 .sketchbutton {
     background-color: #228399;
     border: 1px solid #145d87;
+    user-select: none;
     box-sizing: border-box;
-  }
+}
+
+.sketchslider
+{
+    opacity: 0.7;
+    accent-color: #abffd1;
+}
+
+p{
+    color:#abffd1;
+}
+
+.sketchfooter{
+    background-color: #228399;
+    padding-top: 10px;
+    margin-top: 32px;
+    padding-bottom: 16px;
+    text-align: center;
+    color:#abffd1;
+    box-shadow: 10px 10px 3px #041b38;
+}
